@@ -36,7 +36,7 @@ for epoch in range(epochs):
         weights -= lr * gradient * x
         bias -= lr * gradient
 
-print("Po treningu:")
+
 for x in inputs:
     y_pred = neuron_output(x, weights, bias)
     print(f"Wejście: {x}, wyjście neuronu: {y_pred:.3f}")
